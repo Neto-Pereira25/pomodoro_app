@@ -1,46 +1,102 @@
-# Getting Started with Create React App
+# ⏳ Pomodoro App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um **timer de produtividade** baseado na Técnica Pomodoro, desenvolvido com **React + TypeScript**, que permite alternar entre ciclos de trabalho e descanso com facilidade, exibindo estatísticas úteis como ciclos concluídos e tempo total de trabalho.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Sobre o Projeto
 
-### `npm start`
+Este é um aplicativo que implementa a técnica de gerenciamento de tempo chamada **Pomodoro**, que consiste em:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **25 minutos de trabalho** (por padrão),
+- **5 minutos de pausa curta** após cada ciclo,
+- **15 minutos de pausa longa** após 4 ciclos.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Com isso, o app permite:
 
-### `npm test`
+- Iniciar ciclos de trabalho;
+- Alternar entre pausa curta e longa;
+- Pausar e continuar o tempo;
+- Visualizar estatísticas de produtividade.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧠 Funcionalidades
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ⏱ Timer com controle de trabalho e descanso;
+- 🔁 Gerenciamento de ciclos;
+- 🔔 Áudios para início e fim de sessões;
+- 📊 Exibição de métricas (ciclos concluídos, tempo total, número de pomodoros);
+- 🎨 Interface simples, responsiva e amigável.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Estrutura do Projeto
+```bash
+├── public/ 
+├── src/ 
+│   ├── components/ 
+│   │   ├── button.tsx 
+│   │   ├── pomodoro-timer.tsx 
+│   │   └── timer.tsx 
+│   ├── hooks/ 
+│   │   └── use-interval.tsx 
+│   ├── utils/ 
+│   │   ├── seconds-to-minutes.ts 
+│   │   ├── seconds-to-time.ts 
+│   │   └── zero-left.ts 
+│   ├── App.tsx 
+│   ├── index.tsx 
+│   └── index.css 
+├── .editorconfig 
+├── .eslintrc.js 
+├── .prettierrc.js 
+├── package.json 
+├── tsconfig.json 
+└── README.md
+```
+---
 
-### `npm run eject`
+## 🚀 Como Rodar o Projeto Localmente
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. **Clone o repositório:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/seu-usuario/project-pomodoro-app.git
+cd project-pomodoro-app
+```
+2. **Instale as dependências:**
+```bash
+npm install
+# ou
+yarn
+```
+4. **Inicie o projeto:**
+```bash
+npm start
+# ou
+yarn start
+```
+O app estará disponível em http://localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
+## 🛠 Tecnologias Utilizadas
+* React 19
+* TypeScript
+* React Hooks
+* ESLint + Prettier para padronização de código
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
+## 🎨 Estilo e Código
+O projeto segue as boas práticas de desenvolvimento com:
+* ESLint (.eslintrc.js);
+* Prettier (.prettierrc.js);
+* EditorConfig para padronização entre editores.
 
-## Learn More
+---
+## 🔊 Créditos dos Sons
+Os arquivos de áudio utilizados para notificação estão localizados em src/sounds/ e são usados para indicar o início e fim de uma sessão.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+## ✨ Autor
+Desenvolvido com ❤️ por [José Neto](https://github.com/Neto-Pereira25)
